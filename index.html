@@ -1,35 +1,157 @@
 <!DOCTYPE html>
-<HTml lang="es">   
-<head> 
-    <TITLE>PELUQUERIA PATRICIA!!</TITLE>
-</head>
-<body>
-<main>
+<html lang="es" data-bs-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>PELUQUERIA PATRICIA</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Peluqueria Patricia</a>
+		  <div class="collapse navbar-collapse">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			  <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+			  <li class="nav-item"><a class="nav-link" href="#reservation">Reservas</a></li>
+			  <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
+   
+	<main class="container py-5">
+		<div class="text-center mb-5">
+		  <h1 class="display-4">Bienvenidos a PELUQUERIA PATRICIA</h1>
+		   <h3 class="display-4">Donde tu pelo es nuestro compromiso</h3>
+		  <p class="lead">Nos especializamos en hacerte sentir de maravilla con cortes de pelo profesionales, manicuras y mucho más. Reserva tu sesión hoy mismo y disfruta de un cuidado de belleza premium.</p>
+		</div>
+		<!---- serivios ---->
+		<div class="row" id="services">
+		  <div class="col-md-4 mb-4">
+			<div class="card">
+			  <img src="https://static9.depositphotos.com/1051698/1097/i/450/depositphotos_10977364-stock-photo-woman-with-short-haircut.jpg" class="card-img-top" alt="Corte">
+			  <div class="card-body">
+				<h5 class="card-title">Corte de Pelo</h5>
+				<p class="card-text">20% Descuento los Martes!</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 mb-4">
+			<div class="card">
+			  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8bcg72StUY--ghL4HqSoBExGNo-8a6_nWHg&s" class="card-img-top" alt="Manicura">
+			  <div class="card-body">
+				<h5 class="card-title">Manicuras y u&ndash;as:</h5>
+				<p class="card-text">Reservan dos amigas y obtén un 15% de descuento en ambos servicios.</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 mb-4">
+			<div class="card">
+			  <img src="https://media.istockphoto.com/id/1219595426/es/foto/aplicaci%C3%B3n-de-cera-de-color-dorado-con-esp%C3%A1tula-en-la-cara-de-la-mujer-foto-de-archivo.jpg?s=612x612&w=0&k=20&c=M535BOzYswzbNNEczR1xsQAu09nLyqryqNbc7z5cIpw=" class="card-img-top" alt="Depilacion">
+			  <div class="card-body">
+				<h5 class="card-title">Depilaci&oacute;n:</h5>
+				<p class="card-text">Compra 2 &aacute;reas y llévate la tercera gratis! quedaras mejor que las empanadas de Darin!</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+<section id="redes" class="social">
+    <h2>Síguenos en redes</h2>
+    <a href="https://www.instagram.com/estilounico" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/estilounico" target="_blank">Facebook</a>
+  </section>
 
-    <h1 stylpe="color:brown"/>PELUQUERIA PATRICIA</h1>
 
+ <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <!-- Cambia la ubicación en el enlace de Google Maps -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4034974457987!2d-122.41941568468182!3d37.77492927975927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c2b8653b%3A0x42940d4f774f8e72!2sSan+Francisco!5e0!3m2!1ses!2sus!4v1622208824595!5m2!1ses!2sus"
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
 
+		<!-- reservas o contacto -->
+		<section id="reservation" class="my-5">
+		  <div class="card p-4">
+			<h2 class="mb-3">Realiza tu reserva</h2>
+			<form method="post" action="https://api.web3forms.com/submit" id="gabycontact">
+				<input type="hidden" name="access_key" value="80f0311f-6847-4594-80bc-1011488ef3ee">
+				<input type="hidden" name="from_name" value="Contactopelu">
+				<input type="hidden" name="subject" value="Mensaje de la web">
+			  <div class="row mb-3">
+				<div class="col-md-6">
+				  <label for="name" class="form-label" >Nombre completo:</label>
+				  <input type="text" class="form-control" id="nombre" required>
+				</div>
+				<div class="col-md-6">
+				  <label for="email" class="form-label">Correo</label>
+				  <input type="email" class="form-control" id="email" required>
+				</div>
+			  </div>
+			  <div class="row mb-3">
+				<div class="col-md-6">
+				  <label for="day" class="form-label">D&iacute;a</label>
+				  <select class="form-select" id="day" required>
+					<option value="">Elija el d&iacute;a...</option>
+					<option>Martes</option>
+					<option>Miercoles</option>
+					<option>Jueves</option>
+					<option>Viernes</option>
+					<option>Sabado</option>
+					<option>Domingo</option>
+				  </select>
+				</div>
+				<div class="col-md-6">
+					<label for="time" class="form-label">Hora</label>
+					<select class="form-select" id="time" required>
+						<option value="">Elija...</option>
+						<option>9:00 a.m.</option>
+						<option>10:00 a.m.</option>
+						<option>11:00 a.m.</option>
+						<option>12:00 p.m.</option>
+						<option>1:00 p.m.</option>
+						<option>2:00 p.m.</option>
+						<option>3:00 p.m.</option>
+						<option>4:00 p.m.</option>
+						<option>5:00 p.m.</option>
+						<option>6:00 p.m.</option>
+						<option>7:00 p.m.</option>
+					</select>
 
+  
+				</div>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Enviar reserva</button>
+			</form>
+		  </div>
+		</section>
+	</main>
+	<footer class="bg-light text-center py-4" id="contact">
+		<p class="mb-0">Llamenos <a href="mailto:info@pelonchos.com">info@patricia.com</a>Llamame ya piba!<a href="tel:+1234567890">+1 (234) 567-890</a></p>
+	</footer/>
+	<script>
+		function validarFormulario() {
+				var nombre = document.getElementById('nombre').value;
+				var email = document.getElementById('email').value;
 
-<p>Podes encontrar los mejores cortes de pelo y variedades en colores</p> 
+				if (nombre.trim() == '' || email.trim() == '') {
+				alert('Por favor, complete todos los campos.');
+				return false;
+				}
 
-<ul>
-<OL>MECHAS  6500</OL>
-<OL>BALAGAYE  7500</OL>
-<OL>RETOQUE DE RAIZ  2500</OL>
-<OL>COLOR FANTASIA  5000</OL>
-<OL>CORTES DE TODO TIPO</OL>
-</ul>
+				// Validar el formato del correo electrónico
+				var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				if (!emailRegex.test(email)) {
+				alert('Por favor, introduzca una dirección de correo electrónico válida.');
+				return false;
+				}
 
-
-<img src="1234.jpg" alt="mi foto">
-
-<div>Ingresa a nuestra pagina y no te pierdas de nada</div>
-
-<ul>
-<ol>CORTES 4500</ol>
-<OL>PUNTAS  3000</ol>
-</ul>
-</main>
-</body>
-</HTml>
+				// Si todo está bien, se puede enviar el formulario
+				alert('¡Formulario enviado con éxito!');
+				return true;
+			}
+	</script>
+  </body>
+</html>
